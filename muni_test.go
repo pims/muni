@@ -50,7 +50,7 @@ func TestParsing(t *testing.T) {
 
 	err := xml.Unmarshal([]byte(xmlString), rtt)
 	if err != nil {
-		t.Errorf("Failed to unmarshal XML: %v", err)
+		t.Fatalf("Failed to unmarshal XML: %v", err)
 	}
 
 	wanted := "SF-MUNI"

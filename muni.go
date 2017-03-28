@@ -22,7 +22,7 @@ type Agency struct {
 
 type Route struct {
 	Name               string            `xml:"Name,attr"`
-	Code               int               `xml:"Code,attr"`
+	Code               string            `xml:"Code,attr"`
 	RouteDirectionList []*RouteDirection `xml:"RouteDirectionList>RouteDirection"`
 }
 
